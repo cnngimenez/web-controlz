@@ -526,6 +526,17 @@ section {
   text-decoration: none;
 }
 
+.texto{
+  width: 1200px;
+  font-size: 1.5em;
+}
+
+@media only screen and (max-width: 1000px) {
+  .texto {
+    width:100%;
+  }
+}
+
 /*--------------------------------------------------------------
 # segmentos
 --------------------------------------------------------------*/
@@ -811,4 +822,10 @@ section {
 }
 #footer .footer-links a:hover {
   color: #3498db;
+}
+
+#footer .logo {
+  max-width: 15em;
+  max-height: 5em;
+  margin: 0 1em 0 0;
 }
