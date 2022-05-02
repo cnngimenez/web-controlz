@@ -829,3 +829,11 @@ section {
   max-height: 5em;
   margin: 0 1em 0 0;
 }
+
+@media (max-width: 420px) {
+  .logo {
+    max-width: 5;
+    max-height: 2em;
+    margin: 0 1em 0 0;
+  }
+}
