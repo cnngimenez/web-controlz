@@ -830,10 +830,10 @@ section {
   margin: 0 1em 0 0;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 720px) {
   .logo {
-    max-width: 5;
-    max-height: 2em;
+    max-width: 2em;
+    max-height: 22px;
     margin: 0 1em 0 0;
   }
 }
