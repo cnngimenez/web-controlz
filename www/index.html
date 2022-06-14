@@ -33,6 +33,7 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+
 </head>
 
 <body>
@@ -71,15 +72,14 @@
       </div>
       <div class="row">
         <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-          <h3 data-aos="fade-up" data-aos-delay="600">Escuchanos en la radio UncoCalf</h3>
-          <h3 data-aos="fade-up" data-aos-delay="600">Todos los martes - 13hs</h3>
+          <h3 data-aos="fade-up" data-aos-delay="500">Escuchanos en la radio UncoCalf</h3>
+          <h3 data-aos="fade-up" data-aos-delay="500">Todos los martes - 13hs</h3>
           <div class="btn-group btn-group-toggle" data-aos="fade-up" data-aos-delay="600">
             <a target="_blank" href="https://www.radiouncocalf.com/web/popup/"><button class="btn btn-get-started">UncoCalf</button></a>
           </div>
         </div>
       </div>
     </div>
-
   </section><!-- End Inicio -->
 
   <main id="main">
@@ -90,7 +90,33 @@
         <div class="section-title" data-aos="fade-up">
           <h2>Notas</h2>
         </div>
-        <iframe id="nota" width="100%" height="100%" scrolling="no" frameborder="no" src="https://open.audio/front/embed.html?&amp;type=artist&amp;id=16403" data-aos="fade-up"></iframe>
+        <div class="container" data-aos="fade-up">
+          <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <button class="nav-link active button button--calypso" id="nav-entV-tab" data-bs-toggle="tab"
+              data-bs-target="#entrevistas2022" type="button" role="tab" aria-controls="nav-home"
+              aria-selected="true">
+                <span><h5>Entrevistas 2022</h5></span>
+              </button>
+              <button class="nav-link button button--calypso" id="nav-allEntV-tab" data-bs-toggle="tab"
+              data-bs-target="#todasLasEntrevistas" type="button" role="tab" aria-controls="nav-home"
+              aria-selected="true">
+                <span><h5>Todas Las Entrevistas</h5></span>
+              </button>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active p-3" id="entrevistas2022" role="tabpanel"
+            aria-labelledby="nav-entV-tab">
+              <iframe id="nota" width="100%" height="100%" scrolling="no" frameborder="no" src="https://open.audio/front/embed.html?&amp;type=playlist&amp;id=561"></iframe>
+            </div>
+            <div class="tab-pane fade p-3" id="todasLasEntrevistas" role="tabpanel"
+            aria-labelledby="nav-allEntV-tab">
+            <iframe id="nota" width="100%" height="100%" scrolling="no" frameborder="no" src="https://open.audio/front/embed.html?&amp;type=artist&amp;id=16403"></iframe>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section><!-- End Notas Section -->
 
@@ -109,7 +135,7 @@
       <div class="container">
         <div class="mx-auto texto" data-aos="fade-up">
           <p>Somos el programa de radio de la Facultad de Informática de la Universidad Nacional del Comahue</p>
-      </div>
+        </div>
       </div>
     </section><!-- End About Us Section -->
 
@@ -251,6 +277,10 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <!-- OTROS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-latest.js"></script>
 </body>
 
 </html>
