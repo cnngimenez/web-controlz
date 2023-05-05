@@ -35,8 +35,20 @@
   ======================================================== -->
 
 </head>
-
 <body>
+  <!--
+       By default AOS hides everything it affects, which is problematic when JS is disabled
+       for any reason the user may have (and yes, I sometimes disable JS too!).
+       This noscript fixes that showing all when JS is disabled.
+  -->
+  <noscript>
+    <style>
+     [data-aos] {
+         visibility: visible !important;
+         opacity: 1 !important;
+         transform: none !important; }
+    </style>
+  </noscript>
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center">
@@ -49,10 +61,20 @@
       </div>
 
       <nav id="navbar" class="navbar">
-        <a class="nav-link scrollto" href="#listen"> <h2 class="bi bi-headphones"></h2></a>
-        <a class="nav-link scrollto" target="_blank" href="https://instagram.com/ctrlz_fai?utm_medium=copy_link"> <h2 class="bi bi-instagram primary-button"></h2></a>
-        <a class="nav-link scrollto" target="_blank" href="https://t.me/ControlZ_UNCoCALF"><h2 class="bi bi-telegram"></h2></a>
-        <a class="nav-link scrollto" target="_blank" href="mailto:controlz@fi.uncoma.edu.ar"><h2 class="ri-mail-send-line"></h2></a>
+        <a class="nav-link scrollto" href="#listen" aria-label="Escuchanos"><i class="navbar-icon bi bi-headphones"></i></a>
+        <a class="nav-link scrollto" target="_blank"
+           href="https://instagram.com/ctrlz_fai?utm_medium=copy_link"
+           aria-label="Instagram">
+          <i class="navbar-icon bi bi-instagram primary-button"></i>
+        </a>
+        <a class="nav-link scrollto" target="_blank" href="https://t.me/ControlZ_UNCoCALF"
+           aria-label="Telegram">
+          <i class="navbar-icon bi bi-telegram"></i>
+        </a>
+        <a class="nav-link scrollto" target="_blank" href="mailto:controlz@fi.uncoma.edu.ar"
+           aria-label="Correo Electrónico">
+          <i class="navbar-icon ri-mail-send-line"></i>
+        </a>
       </nav><!-- .navbar -->
 
     </div>
@@ -76,7 +98,7 @@
           <h3 data-aos="fade-up" data-aos-delay="500">Escuchanos en la radio UNCo-CALF</h3>
           <h3 data-aos="fade-up" data-aos-delay="500">Todos los miércoles - 13hs</h3>
           <div class="btn-group btn-group-toggle" data-aos="fade-up" data-aos-delay="600">
-            <a href="#listen" class="btn btn-get-started"><i class="bi bi-headphones"></i> UNCo-CALF</a>
+            <a href="#listen" class="btn btn-outline-primary"><i class="bi bi-headphones"></i> UNCo-CALF</a>
           </div>
         </div>
       </div>
@@ -93,10 +115,17 @@
         </div>
 
         <div data-aos="fade-up" class="text-center">
-          <p>¡Escuchanos aquí! ¡Escuchá
-            <a target="_blank" href="https://www.radiouncocalf.com/"><img width="30px" src="assets/img/uncocalf-logo.png"/> Radio UNCo-CALF</a>!
+          <p>
+            ¡Escuchanos aquí!
+            ¡Escuchá
+            <a target="_blank" href="https://www.radiouncocalf.com/">
+              <img width="30px" src="assets/img/uncocalf-logo.png" alt="UNCo-CALF logo" />
+              Radio UNCo-CALF</a>!
           </p>
-          <iframe frameborder="0" width="400" height="580" scrolling="no" allowtransparency="yes" src="https://www.radiouncocalf.com/web/popup"></iframe>
+          <iframe title="Reproductor de la Radio UNCo-CALF"
+                  frameborder="0" width="400" height="580"
+                  scrolling="no" allowtransparency="yes"
+                  src="https://www.radiouncocalf.com/web/popup"></iframe>
         </div>
       </div>
     </section>
@@ -135,20 +164,21 @@
         <div class="container" data-aos="fade-up">
           <nav>
             <div class="nav nav-tabs" id="nav-tab" role="tablist">
-              <button class="nav-link active button button--calypso" id="nav-entV-tab" data-bs-toggle="tab"
-              data-bs-target="#entrevistas2022" type="button" role="tab" aria-controls="nav-home"
-              aria-selected="true">
-                <span><h5>Entrevistas 2022</h5></span>
+              <button class="nav-link active button button--calypso"
+                      id="nav-entV-tab" data-bs-toggle="tab"
+                      data-bs-target="#entrevistas2022" type="button" role="tab"
+                      aria-controls="nav-home" aria-selected="true">
+                <span class="tab-header">Entrevistas 2022</span>
               </button>
               <button class="nav-link button button--calypso" id="nav-allEntV-tab" data-bs-toggle="tab"
               data-bs-target="#todasLasEntrevistas" type="button" role="tab" aria-controls="nav-home"
               aria-selected="true">
-                <span><h5>Todas Las Entrevistas</h5></span>
+                <span class="tab-header"> Todas Las Entrevistas</span>
               </button>
               <button class="nav-link button button--calypso" id="nav-allEntV-tab" data-bs-toggle="tab"
               data-bs-target="#tris" type="button" role="tab" aria-controls="nav-home"
               aria-selected="true">
-                <span><h5>Tris</h5></span>
+                <span class="tab-header">Tris</span>
               </button>
             </div>
           </nav>
@@ -164,7 +194,9 @@
             <div class="tab-pane fade p-3" id="tris" role="tabpanel"
                  aria-labelledby="nav-allEntV-tab">
               <p>Microhistoria que habla de Tris, estudiante de la Facultad de Informática. Nos muestra cómo es la vida habitual de alguien que estudia informática: las materias, el cursado y la práctica, las amistades...</p>
-              <iframe id="nota" width="100%" height="100%" scrolling="no" frameborder="no" src="https://open.audio/front/embed.html?&amp;type=playlist&amp;id=558"></iframe>
+              <iframe id="nota" width="100%" height="100%" scrolling="no" frameborder="no"
+                      title="Reproductor de OpenAudio para escuchar entrevistas pasadas."
+                      src="https://open.audio/front/embed.html?&amp;type=playlist&amp;id=558"></iframe>
             </div>
           </div>
         </div>
@@ -203,21 +235,21 @@
             <div class="card border-info mb-3 mt-3 icon-box" data-aos="fade-up">
               <div class="card-body">
                 <div class="icon"><i class="bi bi-cpu-fill"></i></div>
-                <h4 class="title">Cultura Libre</h4>
+                <h3 class="title">Cultura Libre</h3>
                 <p class="description">Tecnología, Política y Sofware Libre</p>
               </div>
             </div>
             <div class="card border-info mb-3 mt-3 icon-box" data-aos="fade-up">
               <div class="card-body">
                 <div class="icon"><i class="bi bi-book-half"></i></div>
-                <h4 class="title">Estudía Computación</h4>
+                <h3 class="title">Estudía Computación</h3>
                 <p class="description">¿Por qué estudiar computación en la Universidad Nacional del Comahue?</p>
               </div>
             </div>
             <div class="card border-info mb-3 mt-3 icon-box" data-aos="fade-up">
               <div class="card-body">
                 <div class="icon"><i class="bi bi-gender-trans"></i></div>
-                <h4 class="title">Informática Diversa</h4>
+                <h3 class="title">Informática Diversa</h3>
                 <p class="description">Una mirada con perspectiva de género</p>
               </div>
             </div>
@@ -227,21 +259,21 @@
             <div class="card border-info mb-3 mt-3 icon-box" data-aos="fade-up">
               <div class="card-body">
                 <div class="icon"><i class="bi bi-code"></i></div>
-                <h4 class="title">F1 Ciudadanía Digital</h4>
+                <h3 class="title">F1 Ciudadanía Digital</h3>
                 <p class="description">Computación ciudadana y seguridad informática</p>
               </div>
             </div>
             <div class="card border-info mb-3 mt-3 icon-box" data-aos="fade-up">
               <div class="card-body">
                 <div class="icon"><i class="bx bx-file"></i></div>
-                <h4 class="title">Conocer ++</h4>
+                <h3 class="title">Conocer ++</h3>
                 <p class="description">Divulgación Científica</p>
               </div>
             </div>
             <div class="card border-info mb-3 mt-3 icon-box" data-aos="fade-up">
               <div class="card-body">
                 <div class="icon"><i class="bx bx-world"></i></div>
-                <h4 class="title">Control N</h4>
+                <h3 class="title">Control N</h3>
                 <p class="description">Novedades en la región y el mundo</p>
               </div>
             </div>
@@ -270,8 +302,14 @@
                 se encuentra a la derecha.
               </p>
               <div class="social-links">
-                <a target="_blank" href="https://instagram.com/ctrlz_fai?utm_medium=copy_link" class="instagram"><i class="bi bi-instagram"></i></a>
-                <a target="_blank" href="https://t.me/ControlZ_UNCoCALF" class="telegram"><i class="bi bi-telegram"></i></a>
+                <a target="_blank" href="https://instagram.com/ctrlz_fai?utm_medium=copy_link"
+                   aria-label="Instagram" class="instagram">
+                  <i class="bi bi-instagram"></i>
+                </a>
+                <a target="_blank" href="https://t.me/ControlZ_UNCoCALF" class="telegram"
+                   aria-label="Telegram">
+                  <i class="bi bi-telegram"></i>
+                </a>
               </div>
             </div>
           </div>
@@ -322,7 +360,10 @@
     </div>
   </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"
+     aria-label="Ir hacia el inicio de la página.">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter.js"></script>

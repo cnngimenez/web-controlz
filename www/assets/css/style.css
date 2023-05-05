@@ -1062,3 +1062,25 @@ FIN BOTONES PARA NOTAS
     margin: 0 1em 0 0;
   }
 }
+
+/*
+ Algunas cosas nuevas...
+*/
+
+.navbar .navbar-icon {
+    font-family: "Raleway", sans-serif;
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.tab-header {
+    font-family: "Raleway", sans-serif;
+    font-size: 1.25rem;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
