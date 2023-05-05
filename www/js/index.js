@@ -17,27 +17,34 @@
   along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
+programa_dia = 3;  // 3 es miércoles en JS
+ 
 /**
  Obtener el último programa de radio.
 
  Calcular el último miércoles que pasó a partir de la fecha actual.
 
  @return Un objeto Date
- 
+
+ @param from [Date] Un objeto Date con la fecha desde donde calcular.
+ Usualmente, se utiliza `new Date()` para indicar la fecha actual.
  @todo Generalizar esta función para cualquier fecha y cualquier día.
  */
-function get_ultimo_programa() {
+function get_ultimo_programa(from) {
     // d -> contiene la fecha actual para calcular desde cuando
-    // obtener 
+    // obtener
     var d = new Date();
-    var difer = d.getDay() - 3; // 3 es miércoles en JS.
+    if (from != undefined && from != null) {
+        d = from;
+    }
+    var difer = d.getDay() - programa_dia;
     
     if (difer < 0) {
         // d es lunes o martes.
         difer = 7 + d.getDay() - 3;
     }
 
-    d.setTime(d.getTime() - (d.getDay() - difer * 24 * 60 * 60 * 1000));
+    d.setTime(d.getTime() - difer * 24 * 60 * 60 * 1000);
     d.setHours(13);
     d.setMinutes(0);
     d.setSeconds(0);
