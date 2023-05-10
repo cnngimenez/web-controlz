@@ -85,9 +85,9 @@ function agregar_agradecimiento(nombre) {
     var elt = document.getElementById("agradecimientos");    
     if (elt.innerText == "") {
         // Primer nombre: sin coma.
-        elt.append(nombre);
+        elt.prepend(nombre);
     } else {
-        elt.append(", " + nombre);
+        elt.prepend(nombre + ", ");
     }
 }
 
