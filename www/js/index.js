@@ -73,6 +73,36 @@ function update_ultimo_programa_link() {
         year + "/" + month + "/" + day + "/13/00/00/";
 }
 
+/* -------------------------------------------------- */
+
+/**
+ Agregar un entrevistade a la tabla.
+ 
+ @param datos Un Objeto JSON con los datos a ingresar. Ver el archivo JSON entrevistades.json.
+ */
+function agregar_entrevistade(datos) {
+    var elt = document.getElementById("tabla-entrevistades");
+    // No... no usamos ReactJS... :/
+    var tr = document.createElement("tr");
+    tr.innerHTML = "<td>" + datos.entrevistade + "</td><td>"
+        + datos.tema + "</td><td>"
+        + datos.fecha + "</td>";
+    elt.prepend(tr);
+}
+
+/**
+ 
+ */
+function cargar_entrevistades() {
+    fetch("/datos/entrevistas.json").then( (response) => {
+        response.json().then( (data) => {
+            data.forEach( (entrevista) => {
+                agregar_entrevistade(entrevista);
+            });
+        });
+    });
+}
+
 function startup() {
     update_ultimo_programa_link();
 }

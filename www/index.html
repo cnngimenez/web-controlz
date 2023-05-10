@@ -166,31 +166,61 @@
             <div class="nav nav-tabs" id="nav-tab" role="tablist">
               <button class="nav-link active button button--calypso"
                       id="nav-entV-tab" data-bs-toggle="tab"
+                      data-bs-target="#entrevistades" type="button" role="tab"
+                      aria-controls="nav-home" aria-selected="true">
+                <span class="tab-header">¿Quiénes entrevistamos?</span>
+              </button>              
+              
+              <button class="nav-link active button button--calypso"
+                      id="nav-entV-tab" data-bs-toggle="tab"
                       data-bs-target="#entrevistas2022" type="button" role="tab"
                       aria-controls="nav-home" aria-selected="true">
                 <span class="tab-header">Entrevistas 2022</span>
               </button>
+              
               <button class="nav-link button button--calypso" id="nav-allEntV-tab" data-bs-toggle="tab"
               data-bs-target="#todasLasEntrevistas" type="button" role="tab" aria-controls="nav-home"
               aria-selected="true">
                 <span class="tab-header"> Todas Las Entrevistas</span>
               </button>
+              
               <button class="nav-link button button--calypso" id="nav-allEntV-tab" data-bs-toggle="tab"
               data-bs-target="#tris" type="button" role="tab" aria-controls="nav-home"
               aria-selected="true">
                 <span class="tab-header">Tris</span>
-              </button>
+              </button>              
             </div>
           </nav>
           <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active p-3" id="entrevistades" role="tabpanel"
+                 aria-labelledby="nav-entV-tab">
+              <div class="entrevistades">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Entrevistamos a...</th>
+                      <th>Tema</th>
+                      <th>Fecha</th>
+                    </tr>
+                  </thead>
+                  <tbody id="tabla-entrevistades" >
+                    
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            
             <div class="tab-pane fade show active p-3" id="entrevistas2022" role="tabpanel"
             aria-labelledby="nav-entV-tab">
               <iframe id="nota" width="100%" height="100%" scrolling="no" frameborder="no" src="https://open.audio/front/embed.html?&amp;type=playlist&amp;id=561"></iframe>
             </div>
+            
             <div class="tab-pane fade p-3" id="todasLasEntrevistas" role="tabpanel"
             aria-labelledby="nav-allEntV-tab">
             <iframe id="nota" width="100%" height="100%" scrolling="no" frameborder="no" src="https://open.audio/front/embed.html?&amp;type=artist&amp;id=16403"></iframe>
             </div>
+            
             <div class="tab-pane fade p-3" id="tris" role="tabpanel"
                  aria-labelledby="nav-allEntV-tab">
               <p>Microhistoria que habla de Tris, estudiante de la Facultad de Informática. Nos muestra cómo es la vida habitual de alguien que estudia informática: las materias, el cursado y la práctica, las amistades...</p>
@@ -209,7 +239,7 @@
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
-          <h2>¿Quienes somos?</h2>
+          <h2>¿Quiénes somos?</h2>
         </div>
 
         <div class="mx-auto align-items-center" >
@@ -222,7 +252,7 @@
         </div>
       </div>
     </section><!-- End About Us Section -->
-
+    
     <!-- ======= Segmentos Section ======= -->
     <section id="segmentos" class="segmentos">
       <div class="container">
