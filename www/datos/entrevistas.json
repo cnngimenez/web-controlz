@@ -1,5 +1,109 @@
 [
-
+    {
+        "entrevistade": "Marcia Pizarro",
+        "tema": "Apps realizadas por estudiantes de secundario.",
+        "fecha": "/08/2022"
+    },
+    {
+        "entrevistade": "Luciano Laurin",
+        "tema": "Apps realizadas por estudiantes de secundario. EPET 11 de Zapala.",
+        "fecha": "23/08/2022"
+    },
+    {
+        "entrevistade": "Marcia Pizarro",
+        "tema": "Apps realizadas por estudiantes de secundario. EPET 11 de Zapala.",
+        "fecha": "23/08/2022"
+    },
+    {
+        "entrevistade": "Pablo Forquera",
+        "tema": "Experiencia de los sistemas de votación en las escuelas secundarias.",
+        "fecha": "06/09/2022"
+    },
+    {
+        "entrevistade": "Myriam Melo",
+        "tema": "Taller de estudiantes de secundaria para enseñar programación a estudiantes de primaria.",
+        "fecha": "13/09/2022"
+    },
+    {
+        "entrevistade": "Pablo Domínguez",
+        "tema": "Accesibilidad en la FaI y en la informática.",
+        "fecha": "20/09/2022"
+    },
+    {
+        "entrevistade": "Edison Montiel",
+        "tema": "Accesibilidad en la FaI y en la informática.",
+        "fecha": "20/09/2022"
+    },
+    {
+        "entrevistade": "Carolina Guevara",
+        "tema": "Accesibilidad en la FaI y en la informática.",
+        "fecha": "20/09/2022"
+    },
+    {
+        "entrevistade": "Myriam Melo",
+        "tema": "Taller de estudiantes de secundaria para enseñar programación a estudiantes de primaria. Nos cuentan sus avances y nuevas experiencias.",
+        "fecha": "27/09/2022"
+    },
+    {
+        "entrevistade": "CPEM 69",
+        "tema": "Escuchamos spots hechos por estudiantes del CPEM 69 acerca del ciberbullying, sexting, grooming, etc. para el EESISeg 19'.",
+        "fecha": "04/10/2022"
+    },
+    {
+        "entrevistade": "Daniel Scheck",
+        "tema": "Ética y la informática.",
+        "fecha": "12/10/2022"
+    },
+    {
+        "entrevistade": "Luca Zúñiga",
+        "tema": "Cooperativa tecnológica ALT: Alternativa Laboral Trans.",
+        "fecha": "19/10/2022"
+    },
+    {
+        "entrevistade": "Elena Ficher",
+        "tema": "Cooperativa tecnológica ALT: Alternativa Laboral Trans.",
+        "fecha": "19/10/2022"
+    },
+    {
+        "entrevistade": "Alejandra Cechich",
+        "tema": "Proyecto de Investigación: \"Modelado de variedad en sistemas de Big Data\".",
+        "fecha": "26/10/2022"
+    },
+    {
+        "entrevistade": "Agustina Buccella",
+        "tema": "Proyecto de Investigación: \"Modelado de variedad en sistemas de Big Data\".",
+        "fecha": "26/10/2022"
+    },
+    {
+        "entrevistade": "Virginia Barros",
+        "tema": "FEMIT 2022, conferencia realizada por Las de Sistemas.",
+        "fecha": "09/11/2022"
+    },
+    {
+        "entrevistade": "Carina Frachia",
+        "tema": "Workshop de Enseñanza en Entornos Digitales..",
+        "fecha": "16/11/2022"
+    },
+    {
+        "entrevistade": "Amaia Lechner-Zurita",
+        "tema": "GNU/Linux.",
+        "fecha": "30/11/2022"
+    },
+    {
+        "entrevistade": "Carina Noda",
+        "tema": "GNU/Linux.",
+        "fecha": "30/11/2022"
+    },
+    {
+        "entrevistade": "Rafael Zurita",
+        "tema": "GNU/Linux.",
+        "fecha": "30/11/2022"
+    },
+    {
+        "entrevistade": "Miriam Lechner",
+        "tema": "GNU/Linux.",
+        "fecha": "30/11/2022"
+    },
     {
         "entrevistade": "Federico Amigone",
         "tema": "Diplomatura universitaria \"Hola Mundo\".",
