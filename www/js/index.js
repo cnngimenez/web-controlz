@@ -76,6 +76,24 @@ function update_ultimo_programa_link() {
 /* -------------------------------------------------- */
 
 /**
+ Agregar a un listado de agradecimientos un nombre.
+ Agregar una coma si es necesario.
+
+ @param nombre String El nombre a agregar. 
+ */
+function agregar_agradecimiento(nombre) {
+    var elt = document.getElementById("agradecimientos");    
+    if (elt.innerText == "") {
+        // Primer nombre: sin coma.
+        elt.append(nombre);
+    } else {
+        elt.append(", " + nombre);
+    }
+}
+
+/* -------------------------------------------------- */
+
+/**
  Agregar un entrevistade a la tabla.
  
  @param datos Un Objeto JSON con los datos a ingresar. Ver el archivo JSON entrevistades.json.
@@ -91,13 +109,16 @@ function agregar_entrevistade(datos) {
 }
 
 /**
- 
+ Cargar desde un JSON las personas entrevistadas para agregar a una tabla en
+ la página.
+ También, se agregan sus nombres en los agradecimientos.
  */
 function cargar_entrevistades() {
     fetch("/datos/entrevistas.json").then( (response) => {
         response.json().then( (data) => {
             data.forEach( (entrevista) => {
                 agregar_entrevistade(entrevista);
+                agregar_agradecimiento(entrevista.entrevistade);
             });
         });
     });
