@@ -2,11 +2,56 @@
     {
         "entrevistade": "Verónica Marino",
         "tema": "Informe publicado en program.ar \"¿Por qué estudiamos informática? Indagación sore trayectorias universitarias: instituciones, estudiantes, género y trabajo\".",        
-        "fecha": "2023-05-10"
+        "fecha": "10/05/2023"
     },
     {
         "entrevistade": "Javier Balladini",
         "tema": "Proyecto de extensión \"Sistema de detección temprana de gravedad y gestión de pacientes hospitalizados con COVID-19 y no COVID\".",
-        "fecha": "2023-05-10"
+        "fecha": "10/05/2023"
+    },
+    {
+        "entrevistade": "Agustina Buccella",
+        "tema": "Nominada para el primer Encuentro Nacional de Liderazgo y Comunicación Innovadoras (Programa Futuras).",
+        "fecha": "03/04/2023"
+    },        
+    {
+        "entrevistade": "Rafaela Mazalú",
+        "tema": "Web Accesible y Curso de Posgrado \"Web para Todos: Elementos de Accesibilidad\".",
+        "fecha": "03/05/2023"
+    },        
+    {
+        "entrevistade": "Carina Frachia",
+        "tema": "Realidad aumentada y Realidad Virtual",
+        "fecha": "26/04/2023"
+    },        
+    {
+        "entrevistade": "Luis Coralle",
+        "tema": "FaI en Tecnópolis: Feria IT Joven",
+        "fecha": "19/04/2023"
+    },        
+    {
+        "entrevistade": "Santiago Barroso",
+        "tema": "FaI en Tecnópolis: Feria IT Joven",
+        "fecha": "19/04/2023"
+    },        
+    {
+        "entrevistade": "Rodrigo Piersigilli",
+        "tema": "FaI en Tecnópolis: Feria IT Joven",
+        "fecha": "19/04/2023"
+    },        
+    {
+        "entrevistade": "Claudio Vaucheret",
+        "tema": "Voto electrónico, ¿qué es?",
+        "fecha": "12/04/2023"
+    },        
+    {
+        "entrevistade": "Nadina Carod",
+        "tema": "Curso de Posgrado \"Tópicos Avanzados en Programación Concurrente\".",
+        "fecha": "05/04/2023"
+    },
+    {
+        "entrevistade": "Federico Amigone",
+        "tema": "Diplomatura universitaria \"Hola Mundo\".",
+        "fecha": "05/04/2023"
     }
 ]
