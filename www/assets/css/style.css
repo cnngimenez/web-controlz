@@ -1084,3 +1084,21 @@ FIN BOTONES PARA NOTAS
     font-weight: 500;
     line-height: 1.2;
 }
+
+#agradecimientos {
+    box-sizing: border-box;
+    scroll-margin-top: 80px;
+    scroll-margin-bottom: 100px;
+    height: 500px;
+    margin-top: .5rem;
+    overflow: auto;
+}
+
+.entrevistades {
+    box-sizing: border-box;
+    scroll-margin-top: 80px;
+    scroll-margin-bottom: 100px;
+    height: 500px;
+    margin-top: .5rem;
+    overflow: auto;
+}
