@@ -126,6 +126,7 @@ function cargar_entrevistades() {
 
 function startup() {
     update_ultimo_programa_link();
+    cargar_entrevistades();
 }
 
 if (document.readyState !== 'loading') {
