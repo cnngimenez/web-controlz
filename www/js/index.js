@@ -72,7 +72,7 @@ function update_ultimo_programa_link() {
     if (month < 10) {
         month = "0" + month;
     }
-    var day = miercolesPrevio.getDay();
+    var day = miercolesPrevio.getDate();
     if (day < 10) {
         day = "0" + day;
     } 
