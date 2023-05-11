@@ -17,8 +17,17 @@
   along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
-programa_dia = 3;  // 3 es miércoles en JS
- 
+/**
+ Día del programa radial.
+ 0 = Domingo.
+ */
+const programa_dia = 3;  // 3 es miércoles en JS
+/**
+ Lista de agradecimientos ya escritos.
+ Utilizado para detectar duplicados.
+ */
+var lst_agradecimientos = [];
+
 /**
  Obtener el último programa de radio.
 
@@ -76,18 +85,43 @@ function update_ultimo_programa_link() {
 /* -------------------------------------------------- */
 
 /**
+ Buscar un nombre en la lista de agredcides.
+
+ @param nombre String
+
+ @return Boolean
+ */
+function fue_agradecide(nombre) {
+    var res = lst_agradecimientos.findIndex( (agradecide) => {
+        return agradecide == nombre;
+    });
+    return res >= 0;
+}
+
+/**
  Agregar a un listado de agradecimientos un nombre.
  Agregar una coma si es necesario.
+
+ Si el nombre ya fue agradecido, agregar un mensaje por participar nuevamente.
 
  @param nombre String El nombre a agregar. 
  */
 function agregar_agradecimiento(nombre) {
-    var elt = document.getElementById("agradecimientos");    
+    var elt = document.getElementById("agradecimientos");
+    var texto = nombre;
+
+    if (fue_agradecide(nombre)) {
+        // Ya se mostró... agregar mensaje
+        texto += " (¡por participar nuevamente!)";
+    } else {
+        lst_agradecimientos.push(nombre);
+    }
+    
     if (elt.innerText == "") {
         // Primer nombre: sin coma.
-        elt.prepend(nombre);
+        elt.prepend(texto);
     } else {
-        elt.prepend(nombre + ", ");
+        elt.prepend(texto + ", ");
     }
 }
 
@@ -102,9 +136,10 @@ function agregar_entrevistade(datos) {
     var elt = document.getElementById("tabla-entrevistades");
     // No... no usamos ReactJS... :/
     var tr = document.createElement("tr");
-    tr.innerHTML = "<td>" + datos.entrevistade + "</td><td>"
-        + datos.tema + "</td><td>"
-        + datos.fecha + "</td>";
+    tr.innerHTML = "<td>" + datos.entrevistade + "</td>";
+    tr.innerHTML += "<td>" + datos.tema + "</td>";
+    tr.innerHTML += "<td>" + datos.fecha + "</td>";
+    
     elt.prepend(tr);
 }
 
