@@ -704,7 +704,7 @@ a:focus-visible {
 	overflow: hidden;
 	font-family: freight-display-pro, serif;
 	font-size: 1.15rem;
-	border-radius: 0.85rem;
+	/* border-radius: 0.85rem; */
 	color: rgb(0, 0, 0);
 }
 
