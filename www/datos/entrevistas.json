@@ -373,5 +373,15 @@
         "entrevistade": "Verónica Marino",
         "tema": "Informe publicado en program.ar \"¿Por qué estudiamos informática? Indagación sore trayectorias universitarias: instituciones, estudiantes, género y trabajo\".",        
         "fecha": "10/05/2023"
+    },
+    {
+        "entrevistade": "Mara Borchardt",
+        "tema": "¡ProgramAR (https://program.ar) cumple 10 años!",        
+        "fecha": "17/05/2023"
+    },
+    {
+        "entrevistade": "Laura Cecchi",
+        "tema": "Prolog for Kids - Enseñando a programar (con lógica) en escuelas primarias.",        
+        "fecha": "17/05/2023"
     }
 ]
