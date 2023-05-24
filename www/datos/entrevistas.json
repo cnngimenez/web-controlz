@@ -383,5 +383,10 @@
         "entrevistade": "Laura Cecchi",
         "tema": "Prolog for Kids - Enseñando a programar (con lógica) en escuelas primarias.",        
         "fecha": "17/05/2023"
+    },
+    {
+        "entrevistade": "Javier Castrillo",
+        "tema": "Nuestro GNU/Linux: Huayra (https://huayra.educar.gob.ar/).",        
+        "fecha": "24/05/2023"
     }
 ]
