@@ -388,5 +388,15 @@
         "entrevistade": "Javier Castrillo",
         "tema": "Nuestro GNU/Linux: Huayra (https://huayra.educar.gob.ar/).",        
         "fecha": "24/05/2023"
-    }
+    },
+    {
+        "entrevistade": "Marcos Cortés",
+        "tema": "Ciencias de la Computación en la escuela.",        
+        "fecha": "31/05/2023"
+    },
+    {
+        "entrevistade": "Beatriz Busaniche",
+        "tema": "Repercusiones y debate del Voto Electrónico.",        
+        "fecha": "31/05/2023"
+    }    
 ]
