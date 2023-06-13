@@ -159,9 +159,49 @@ function cargar_entrevistades() {
     });
 }
 
+function mostrar_on_live(mostrar) {
+    let live_elts = document.querySelectorAll('.live');
+    let off_elts = document.querySelectorAll('.live-off');
+
+    live_elts.forEach ( (elt) => {
+        if (mostrar) {
+            elt.style.display = 'inline';
+        } else {
+            elt.style.display = 'none';
+        }
+    });
+    off_elts.forEach(  (elt) => {
+        if (mostrar) {
+            elt.style.display = 'none';
+        } else {
+            elt.style.display = 'inline';
+        }        
+    });
+}
+
+/**
+ Mostrar u ocultar el cartel de en vivo.
+
+ @param today [Date] Instancia de date con la fecha. Si null, entonces usar
+                     la fecha actual.
+ */
+function on_live(today) {
+    if (today == undefined || today == null) {
+        today = new Date();
+    }
+    
+    if (today.getDay() == 3 &&
+        today.getHours() >= 13 && today.getHours() < 14) {
+        mostrar_on_live(true);
+    } else {
+        mostrar_on_live(false);
+    }
+}
+
 function startup() {
     update_ultimo_programa_link();
     cargar_entrevistades();
+    on_live();
 }
 
 if (document.readyState !== 'loading') {

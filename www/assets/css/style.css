@@ -1102,3 +1102,37 @@ FIN BOTONES PARA NOTAS
     margin-top: .5rem;
     overflow: auto;
 }
+
+/*
+ On-live!
+ En vivo.
+*/
+
+@keyframes onlive {
+    from {
+        background-color: red;
+        color: white;
+    }
+    to {
+        background-color: white;
+        color: red;
+    }
+}
+
+.live {
+    display: none;
+    border-style: solid;
+    border-radius: 15px 15px;
+    border-color: #f00;
+    background-color: #f00;
+    color: #fff;
+    animation-name: onlive;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+
+.live-off {
+    display: inline;
+}
