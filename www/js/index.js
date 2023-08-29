@@ -223,11 +223,8 @@ function on_live(today) {
  Esto permite cargar la página primero y los iframes después de que
  el DOM esté disponible.
  */
-function cargar_iframes() {
-    var iframe = document.getElementById('iframeReproductor');
-    iframe.setAttribute('src', 'https://www.radiouncocalf.com/web/popup');
-    
-    iframe = document.getElementById('iframeNotas');
+function cargar_iframes() {        
+    var iframe = document.getElementById('iframeNotas');
     iframe.setAttribute('src', 'https://open.audio/front/embed.html?type=artist&id=16403');
 
     iframe = document.getElementById('iframeTris');
