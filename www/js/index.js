@@ -217,10 +217,28 @@ function on_live(today) {
     }
 }
 
+/**
+ Asignar los atributos src para que los iframes cargen su contenido.
+
+ Esto permite cargar la página primero y los iframes después de que
+ el DOM esté disponible.
+ */
+function cargar_iframes() {
+    var iframe = document.getElementById('iframeReproductor');
+    iframe.setAttribute('src', 'https://www.radiouncocalf.com/web/popup');
+    
+    iframe = document.getElementById('iframeNotas');
+    iframe.setAttribute('src', 'https://open.audio/front/embed.html?type=artist&id=16403');
+
+    iframe = document.getElementById('iframeTris');
+    iframe.setAttribute('src', 'https://open.audio/front/embed.html?type=playlist&id=558');
+}
+
 function startup() {
     update_ultimo_programa_link();
     cargar_entrevistades();
     on_live();
+    cargar_iframes();
 }
 
 if (document.readyState !== 'loading') {
