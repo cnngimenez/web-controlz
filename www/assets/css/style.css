@@ -1150,3 +1150,7 @@ header#header nav .logo {
     font-size: x-large !important;
     font-weight: bold !important;                   
 }
+
+header#header nav #navbarContent {
+    justify-content: right;
+}
