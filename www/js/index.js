@@ -144,6 +144,22 @@ function agregar_entrevistade(datos) {
 }
 
 /**
+ Agregar un entrevistade a un div de preview.
+ 
+ @param datos Un Objeto JSON con los datos a ingresar. Ver el archivo JSON entrevistades.json.
+ */
+function agregar_entrevistade_preview(datos) {
+    var elt = document.getElementById("previewEntrevistades");
+    // No... no usamos ReactJS... :/
+    var tr = document.createElement("tr");
+    tr.innerHTML = "<td>" + datos.entrevistade + "</td>";
+    tr.innerHTML += "<td>" + datos.tema + "</td>";
+    tr.innerHTML += "<td>" + datos.fecha + "</td>";
+    
+    elt.prepend(tr);
+}
+
+/**
  Cargar desde un JSON las personas entrevistadas para agregar a una tabla en
  la página.
  También, se agregan sus nombres en los agradecimientos.
@@ -151,7 +167,10 @@ function agregar_entrevistade(datos) {
 function cargar_entrevistades() {
     fetch("/datos/entrevistas.json").then( (response) => {
         response.json().then( (data) => {
-            data.forEach( (entrevista) => {
+            data.slice(-5).forEach( (entrevista) => {
+                agregar_entrevistade_preview(entrevista);
+            });
+            data.slice(0, -5).forEach( (entrevista) => {
                 agregar_entrevistade(entrevista);
                 agregar_agradecimiento(entrevista.entrevistade);
             });

@@ -215,7 +215,26 @@
             <div class="tab-pane fade show active p-3" id="entrevistades" role="tabpanel"
                  aria-labelledby="nav-entV-tab">
               <p>Hemos entrevistados a las siguientes personas:</p>
-              <div class="entrevistades table-responsive">
+
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Entrevistamos a...</th>
+                      <th>Tema</th>
+                      <th>Fecha</th>
+                    </tr>
+                  </thead>
+                  <tbody id="previewEntrevistades" >
+                    
+                  </tbody>
+                </table>
+                
+              <button class="btn btn-secondary" type="button"
+                      data-bs-target="#entrevistasDiv" data-bs-toggle="collapse"
+                      aria-expanded="false" aria-controls="entrevistasDiv">
+                Ver todas
+              </button>
+              <div class="collapse entrevistades table-responsive" id="entrevistasDiv">
                 <table class="table">
                   <thead>
                     <tr>

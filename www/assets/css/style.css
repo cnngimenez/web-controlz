@@ -1086,20 +1086,24 @@ FIN BOTONES PARA NOTAS
 }
 
 #agradecimientos {
-    box-sizing: border-box;
-    scroll-margin-top: 80px;
-    scroll-margin-bottom: 100px;
-    height: 500px;
+    box-sizing: border-box;   
     margin-top: .5rem;
-    overflow: auto;
+
+    /*
+     scroll-margin-top: 80px; 
+     scroll-margin-bottom: 100px; 
+     height: 500px; 
+     overflow: auto;
+   */
 }
 
 .entrevistades {
     box-sizing: border-box;
+    margin-top: .5rem;
+
     scroll-margin-top: 80px;
     scroll-margin-bottom: 100px;
-    height: 500px;
-    margin-top: .5rem;
+    height: 500px;   
     overflow: auto;
 }
 
