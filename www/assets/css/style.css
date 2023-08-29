@@ -1136,3 +1136,17 @@ FIN BOTONES PARA NOTAS
 .live-off {
     display: inline;
 }
+
+header#header nav h1 {
+    display: inline-block;
+}
+header#header nav h1 a {
+    padding-left: 10px;
+    font-size: x-large !important;
+    font-weight: bold !important;
+}
+header#header nav .logo {
+    display: inline-block;
+    font-size: x-large !important;
+    font-weight: bold !important;                   
+}
