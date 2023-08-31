@@ -169,11 +169,12 @@ function cargar_entrevistades() {
         response.json().then( (data) => {
             data.slice(-5).forEach( (entrevista) => {
                 agregar_entrevistade_preview(entrevista);
+                agregar_agradecimiento(entrevista.entrevistade);
             });
             data.slice(0, -5).forEach( (entrevista) => {
                 agregar_entrevistade(entrevista);
                 agregar_agradecimiento(entrevista.entrevistade);
-            });
+            });           
         });
     });
 }
