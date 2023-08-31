@@ -106,7 +106,7 @@ function fue_agradecide(nombre) {
 
  @param nombre String El nombre a agregar. 
  */
-function agregar_agradecimiento(nombre) {
+function agregar_agradecimiento(nombre, prepend=true) {
     var elt = document.getElementById("agradecimientos");
     var texto = nombre;
 
@@ -117,11 +117,15 @@ function agregar_agradecimiento(nombre) {
         lst_agradecimientos.push(nombre);
     }
     
-    if (elt.innerText == "") {
+    if (elt.innerText != "") {
         // Primer nombre: sin coma.
+        texto += ", ";
+    }
+
+    if (prepend) {
         elt.prepend(texto);
     } else {
-        elt.prepend(texto + ", ");
+        elt.append(texto);
     }
 }
 
@@ -167,14 +171,14 @@ function agregar_entrevistade_preview(datos) {
 function cargar_entrevistades() {
     fetch("/datos/entrevistas.json").then( (response) => {
         response.json().then( (data) => {
+            data.slice(0, -5).forEach( (entrevista) => {
+                agregar_entrevistade(entrevista);
+                agregar_agradecimiento(entrevista.entrevistade);
+            });
             data.slice(-5).forEach( (entrevista) => {
                 agregar_entrevistade_preview(entrevista);
                 agregar_agradecimiento(entrevista.entrevistade);
             });
-            data.slice(0, -5).forEach( (entrevista) => {
-                agregar_entrevistade(entrevista);
-                agregar_agradecimiento(entrevista.entrevistade);
-            });           
         });
     });
 }
