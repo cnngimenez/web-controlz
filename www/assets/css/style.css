@@ -904,7 +904,7 @@ FIN BOTONES PARA NOTAS
   line-height: 28px;
   margin-bottom: 0;
 }
-.segmentos .icon-box:hover .title a, .segmentos .icon-box:hover .description {
+.segmentos .icon-box:hover .title a, .segmentos .icon-box:hover .description .btn:hover {
   color: #fff;
 }
 .segmentos .icon-box:hover .icon {
@@ -912,6 +912,10 @@ FIN BOTONES PARA NOTAS
 }
 .segmentos .icon-box:hover .icon i {
   color: #3498db;
+}
+.segmentos .btn:hover {
+    color: #fff;
+    background: #3498db;
 }
 
 /*--------------------------------------------------------------
