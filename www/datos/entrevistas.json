@@ -488,5 +488,25 @@
         "entrevistade": "Guillermo Grosso",
         "tema": "Historia de la Computación y la historia de Manuel Sadosky.",
         "fecha": "06/09/2023"
+    },
+    {
+        "entrevistade": "Rafael Zurita",
+        "tema": "Armando XINU en colaboración con la Universidad de Purdue.",
+        "fecha": "20/09/2023"
+    },
+    {
+        "entrevistade": "Federico Solorza",
+        "tema": "¿Cómo es vivir una Colación de grado?",
+        "fecha": "20/09/2023"
+    },
+    {
+        "entrevistade": "Nicolás Casanova",
+        "tema": "Talleres realizados en la localidad de Mariano Moreno.",
+        "fecha": "04/10/2023"
+    },   
+    {
+        "entrevistade": "Gabriela Sepúlveda",
+        "tema": "La Huerta Universitaria.",
+        "fecha": "04/10/2023"
     }    
 ]
