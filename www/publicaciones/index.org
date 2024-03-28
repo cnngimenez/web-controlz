@@ -1,0 +1,268 @@
+
+#+begin_export html
+<style>
+body {
+    font-size: 14pt;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 2;
+    max-width: 80ch;
+    text-rendering: optimizelegibility;
+    hyphens: auto;
+    overflow-x: hidden;
+    margin: 0 auto;
+}
+</style>
+#+end_export
+
+#+HTML: <main>
+
+Artículo publicado en las Jornadas de la Facultad de Informática (JFaI) 2023.
+
+Descargar este artículo en [[file:JFaI2023.pdf][versión PDF (original)]] ó [[file:JFaI2023-sans_serif.pdf][versión PDF (14pt fuente Sans Serif)]].
+
+* Fundamentos de nuestro proyecto
+En nuestra vida cotidiana utilizamos artefactos tecnológicos todo el
+tiempo. Estos atraviesan nuestro día a día ya sea en el trabajo como en
+el ocio, cambiando nuestras costumbres y hábitos. El tipo de tarea puede
+ser en apariencia simple, como enviar mensajes de texto, o compleja,
+como hacer uso de un sistema inteligente. Sin embargo, es necesario
+conocer los conceptos y el funcionamiento de estos artefactos para
+promover un debate sobre temas que nos interesan socialmente: respecto a
+su uso responsable, que preserve nuestra privacidad y seguridad, que se
+converse acerca de la manipulación ética de datos, que se compartan
+curiosidades y formas de utilización, que se conozca el potencial y los
+posibles efectos, que se enseñe y se estudie el software y hardware,
+entre otros.
+
+En muchos ámbitos sociales también se encuentra influenciada la
+informática. Por ejemplo, en la currícula de las escuelas primarias y
+secundarias incluye contenido de seguridad informática, robótica e
+inteligencia artificial, entre otros; en el mundo profesional e
+industrial se realizan capacitaciones para el uso de herramientas
+informáticas, siendo hasta componentes esenciales para su trabajo
+diario.
+
+La facultad no es ajena a esto, todo lo contrario: posee múltiples
+proyectos de investigación y extensión con amplio contacto y
+colaboración con los diferentes ámbitos sociales y laborales, aportando
+un intercambio rico en capacitación e información. Por ejemplo,
+proyectos con interacción con escuelas secundarias para promover el
+internet seguro, la programación y creación de aplicaciones[fn:1], la
+robótica[fn:2], la realidad aumentada para museos[fn:3], entre otros.
+
+Por ello, integrantes de la comunidad de la Facultad de Informática
+creamos un espacio dinámico y entretenido donde conversar para conocer,
+entender y compartir el modo en que la tecnología nos pone a vivir.
+Comunicando las distintas actividades universitarias como así también
+promoviendo el debate acerca de los conceptos, de las nuevas tecnologías
+y el uso ético de las mismas.
+
+* Objetivos y Metodología
+Es por esto, que este proyecto propone cuatro ejes para generar una
+vinculación de doble vía entre la facultad y las instituciones públicas
+con alcance social: Establecer vínculos, promover la palabra, producción
+y promoción de recursos audio-visuales, y la realización de talleres y
+conversatorios. Todos estos objetivos intentan fomentar la curiosidad
+tecnológica del público en general mientras se comunica y vincula la
+comunidad FaI y sus distintos proyectos.
+
+** Ejes metodológicos
+Como metodología de trabajo se empleó un modelo constructivista, en el
+cual los integrantes de nuestro equipo participan activamente para la
+formación de esta propuesta de comunicación. El proyecto se compone de
+cuatro ejes bien diferenciados.
+
+El primer eje, busca establecer vínculos promoviendo el intercambio de
+saberes tanto desde la facultad hacia las instituciones, como de estas
+hacia la facultad. Conocimientos más técnicos de,por ejemplo, conceptos,
+metodologías, tecnologías y su funcionamiento ayudan a las instituciones
+y sus integrantes a comprender las distintas noticias y novedades donde
+la informática puede encontrarse embebida en ellas. Además, conceptos y
+prácticas de comunicación y socialización promueven a la facultad a
+enriquecer sus interacciones con dicha institución, y con el público de
+estas, fomentando y compartiendo nuestros proyectos y producciones. La
+radiodifusión, los talleres y conversatorios es una forma de llevar a
+cabo este eje, promoviendo la vinculación e interacción a medida que se
+realizan actividades entre integrantes de las instituciones y de la
+facultad.
+
+El segundo eje, consiste en compartir la palabra de nuestra facultad
+acerca de nuestros proyectos, propuestas y novedades, como así también
+de nuestros conocimientos. Esto, no suele ser agenda habitual de las
+instituciones con marcada influencia social, pero aún así, no deja de
+ser de interés para el público en general. Para ello, la elaboración de
+audiovisuales promueve la comunicación y el debate, permitiendo llevar
+nuestro mensaje por los diferentes medios de difusión y así remitir la
+palabra a una audiencia general.
+
+El tercer eje, es la producción y promoción de recursos audio-visuales
+como medio creativo y para compartir información y actualidad. Estos
+recursos pueden ser producidos tanto por estudiantes, docentes, no
+docentes y graduados de nuestra facultad como por otras personas de la
+comunidad en colaboración con nuestro proyecto. Por ejemplo, estudiantes
+de escuelas secundarias [fn:4] profesionales y trabajadores de la radio,
+personas interesadas en compartir experiencias de la informática, etc.
+Promueven el debate y la comunicación de información a la sociedad en
+general. También, se de gran utilidad para complementar las actividades
+de los otros ejes.
+
+Por último, el cuarto eje conlleva la realización de talleres y
+conversatorios por parte de los integrantes del proyecto para
+intercambiar conocimientos y promover tópicos que sean de su interés,
+ampliando la vinculación por medio de una interacción más personal y no
+solo por medio de recursos digitales.
+
+* Experiencias y resultados
+Actualmente, la Facultad de Informática está desarrollando un programa
+de radio denominado de una hora "Control Z" emitido por la FM 103.7
+Radio UNCo-CALF[fn:5]. Su contenido se produce en un ambiente
+colaborativo recibiendo novedades e información de los distintos
+claustros de nuestra facultad.
+
+Las personas participantes del proyecto, comparten el objetivo en común
+de producir y realizar cada emisión del programa, aprendiendo el proceso
+que se requiere para ello: la producción del guión y del contenido, la
+elaboración de recursos auditivos, la preparación y realización de
+entrevistas, la interacción con el personal de radio (operadores,
+directores de radio, productores, etc.), conducción del programa, la
+gestión de redes sociales y la consideración de la identidad gráfica,
+etc.
+
+Es relevante mencionar que estas actividades y la interacción con el
+público general les propone una experiencia innovadora y satisfactoria
+para las personas participantes de la producción y la conducción del
+programa, particularmente estudiantes, incentivando sus aportes, su
+creatividad y su predisposición para estudiar e investigar temáticas de
+informática y de la universidad y para intercambiar su experiencias ante
+la sociedad.
+
+La integración de las TICs como recurso de investigación y formación
+junto con la dinámica radial favoreció el vinculo con la comunidad
+universitaria y con otras comunidades como centros educativos para
+intercambios de experiencias escolares, y grupos de especialistas
+informáticos de la zona, entre otros.
+
+* Integrantes del Equipo Control Z
+El equipo de Control Z está compuesto por integrantes de diferentes
+claustros de la Facultad de Informática de la Universidad Nacional del
+Comahue.
+
+- Acosta, Ian Franco Matías. Integrante del claustro Estudiante de la
+  Facultad de Informática.
+
+- Avellaneda, Ángel. Integrante del claustro Estudiante de la Facultad
+  de Informática.
+
+- Bruno, Leo. Integrante del claustro Estudiante de la Facultad de
+  Informática.
+
+- Cañibano, Rodrigo. Integrante del claustro Docente de la Facultad de
+  Informática.
+
+- Galaz, Lara Virginia. Integrante del claustro Estudiante de la
+  Facultad de Informática.
+
+- Gimenez, Christian Nelson. Integrante del claustro Docente de la
+  Facultad de Informática.
+
+- Kogan, Pablo. Integrante del claustro Docente de la Facultad de
+  Informática.
+
+- Mazalu, Rafaela. Integrante del claustro Docente de la Facultad de
+  Informática.
+
+- Monserrat Vidal, María Elvira. Integrante del claustro Estudiante de
+  la Facultad de Informática.
+
+- Morán, Marina. Integrante del claustro Docente de la Facultad de
+  Informática.
+
+- Rodriguez, Jorge Pablo. Integrante del claustro Docente de la Facultad
+  de Informática.
+
+- Rotter, Valeria. Integrante del claustro No docente de la Facultad de
+  Informática.
+
+- Villarroel, Valentina. Integrante del claustro Estudiante de la
+  Facultad de Informática.
+
+[fn:1] [[https://incuba.fi.uncoma.edu.ar/webinar/appinventor/]]
+
+[fn:2] [[http://incuba.fi.uncoma.edu.ar/franklab]]
+
+[fn:3] [[https://www.fi.uncoma.edu.ar/index.php/prensa/feria-it-joven-en-tecnopolis/]]
+
+[fn:4] Ejemplos de spots creados en otros proyectos de la FaI: EESISeg
+       de los cuales Control Z puede utilizar y colaborar
+       [[https://internetseguro.fi.uncoma.edu.ar/categoria-producto/tipo-de-recurso/spot-radio/]]),
+       visitado el día 30 de octubre del 2023.
+
+[fn:5] [[https://universidadcalf.com/]] visitado el 30 de octubre
+       del 2023.
+
+#+HTML: </main>
+
+* Meta     :noexport:
+
+# ----------------------------------------------------------------------
+#+TITLE:  Proyecto de Extensión: FaIComm: Charlando Sobre Informática
+#+SUBTITLE:
+#+AUTHOR: Equipo Control Z - Facultad de Informática, Universidad Nacional del Comahue
+#+DATE: Noviembre del 2023
+#+EMAIL: controlz@fi.uncoma.edu.ar
+#+DESCRIPTION: 
+#+KEYWORDS: comunicación, recursos audiovisuales, actualidad informática, noticias FaI
+
+#+STARTUP: inlineimages hidestars content hideblocks entitiespretty
+#+STARTUP: indent fninline latexpreview
+
+#+OPTIONS: H:3 num:t toc:nil \n:nil @:t ::t |:t ^:{} -:t f:t *:t <:t
+#+OPTIONS: TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+OPTIONS: tex:imagemagick
+
+#+TODO: TODO(t!) CURRENT(c!) PAUSED(p!) | DONE(d!) CANCELED(C!@)
+
+# -- Export
+#+LANGUAGE: es
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+# #+export_file_name: index
+
+# -- HTML Export
+# #+INFOJS_OPT: view:info toc:t ftoc:t ltoc:t mouse:underline buttons:t path:libs/org-info.js
+#+HTML_LINK_HOME: https://controlz.fi.uncoma.edu.ar
+# #+HTML_HEAD_EXTRA: <link href="css/guiones.css" rel="stylesheet">
+# #+HTML_HEAD: <link href="css/style-org.css" rel="stylesheet">
+
+# -- LaTeX Export
+# #+LATEX_CLASS: article
+#+latex_compiler: xelatex
+# #+latex_class_options: [12pt, twoside]
+
+#+latex_header: \usepackage{csquotes}
+# #+latex_header: \usepackage[spanish]{babel}
+# #+latex_header: \usepackage[margin=2cm]{geometry}
+# #+latex_header: \usepackage{fontspec}
+# -- biblatex
+#+latex_header: \usepackage[backend=biber, style=alphabetic, backref=true]{biblatex}
+#+latex_header: \addbibresource{tangled/biblio.bib}
+# -- -- Tikz
+# #+LATEX_HEADER: \usepackage{tikz}
+# #+LATEX_HEADER: \usetikzlibrary{arrows.meta}
+# #+LATEX_HEADER: \usetikzlibrary{decorations}
+# #+LATEX_HEADER: \usetikzlibrary{decorations.pathmorphing}
+# #+LATEX_HEADER: \usetikzlibrary{shapes.geometric}
+# #+LATEX_HEADER: \usetikzlibrary{shapes.symbols}
+# #+LATEX_HEADER: \usetikzlibrary{positioning}
+# #+LATEX_HEADER: \usetikzlibrary{trees}
+
+# #+LATEX_HEADER_EXTRA:
+
+# Local Variables:
+# org-hide-emphasis-markers: t
+# org-use-sub-superscripts: "{}"
+# fill-column: 80
+# visual-line-fringe-indicators: t
+# ispell-local-dictionary: "british"
+# org-latex-default-figure-position: "tbp"
+# End:

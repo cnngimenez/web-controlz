@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+<!-- 2024-03-28 jue 17:01 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Proyecto de Extensión: FaIComm: Charlando Sobre Informática</title>
+<meta name="author" content="Equipo Control Z - Facultad de Informática, Universidad Nacional del Comahue" />
+<meta name="keywords" content="comunicación, recursos audiovisuales, actualidad informática, noticias FaI" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="org-div-home-and-up">
+ <a accesskey="h" href=""> UP </a>
+ |
+ <a accesskey="H" href="https://controlz.fi.uncoma.edu.ar"> HOME </a>
+</div><div id="content" class="content">
+<h1 class="title">Proyecto de Extensión: FaIComm: Charlando Sobre Informática</h1>
+<style>
+body {
+    font-size: 14pt;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 2;
+    max-width: 80ch;
+    text-rendering: optimizelegibility;
+    hyphens: auto;
+    overflow-x: hidden;
+    margin: 0 auto;
+}
+</style>
+
+<main>
+
+<p>
+Artículo publicado en las Jornadas de la Facultad de Informática (JFaI) 2023.
+</p>
+
+<p>
+Descargar este artículo en <a href="JFaI2023.pdf">versión PDF (original)</a> ó <a href="JFaI2023-sans_serif.pdf">versión PDF (14pt fuente Sans Serif)</a>.
+</p>
+
+<div id="outline-container-orgf813ff3" class="outline-2">
+<h2 id="orgf813ff3"><span class="section-number-2">1.</span> Fundamentos de nuestro proyecto</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+En nuestra vida cotidiana utilizamos artefactos tecnológicos todo el
+tiempo. Estos atraviesan nuestro día a día ya sea en el trabajo como en
+el ocio, cambiando nuestras costumbres y hábitos. El tipo de tarea puede
+ser en apariencia simple, como enviar mensajes de texto, o compleja,
+como hacer uso de un sistema inteligente. Sin embargo, es necesario
+conocer los conceptos y el funcionamiento de estos artefactos para
+promover un debate sobre temas que nos interesan socialmente: respecto a
+su uso responsable, que preserve nuestra privacidad y seguridad, que se
+converse acerca de la manipulación ética de datos, que se compartan
+curiosidades y formas de utilización, que se conozca el potencial y los
+posibles efectos, que se enseñe y se estudie el software y hardware,
+entre otros.
+</p>
+
+<p>
+En muchos ámbitos sociales también se encuentra influenciada la
+informática. Por ejemplo, en la currícula de las escuelas primarias y
+secundarias incluye contenido de seguridad informática, robótica e
+inteligencia artificial, entre otros; en el mundo profesional e
+industrial se realizan capacitaciones para el uso de herramientas
+informáticas, siendo hasta componentes esenciales para su trabajo
+diario.
+</p>
+
+<p>
+La facultad no es ajena a esto, todo lo contrario: posee múltiples
+proyectos de investigación y extensión con amplio contacto y
+colaboración con los diferentes ámbitos sociales y laborales, aportando
+un intercambio rico en capacitación e información. Por ejemplo,
+proyectos con interacción con escuelas secundarias para promover el
+internet seguro, la programación y creación de aplicaciones<sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup>, la
+robótica<sup><a id="fnr.2" class="footref" href="#fn.2" role="doc-backlink">2</a></sup>, la realidad aumentada para museos<sup><a id="fnr.3" class="footref" href="#fn.3" role="doc-backlink">3</a></sup>, entre otros.
+</p>
+
+<p>
+Por ello, integrantes de la comunidad de la Facultad de Informática
+creamos un espacio dinámico y entretenido donde conversar para conocer,
+entender y compartir el modo en que la tecnología nos pone a vivir.
+Comunicando las distintas actividades universitarias como así también
+promoviendo el debate acerca de los conceptos, de las nuevas tecnologías
+y el uso ético de las mismas.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org50c3962" class="outline-2">
+<h2 id="org50c3962"><span class="section-number-2">2.</span> Objetivos y Metodología</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Es por esto, que este proyecto propone cuatro ejes para generar una
+vinculación de doble vía entre la facultad y las instituciones públicas
+con alcance social: Establecer vínculos, promover la palabra, producción
+y promoción de recursos audio-visuales, y la realización de talleres y
+conversatorios. Todos estos objetivos intentan fomentar la curiosidad
+tecnológica del público en general mientras se comunica y vincula la
+comunidad FaI y sus distintos proyectos.
+</p>
+</div>
+
+<div id="outline-container-orge6339b4" class="outline-3">
+<h3 id="orge6339b4"><span class="section-number-3">2.1.</span> Ejes metodológicos</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+Como metodología de trabajo se empleó un modelo constructivista, en el
+cual los integrantes de nuestro equipo participan activamente para la
+formación de esta propuesta de comunicación. El proyecto se compone de
+cuatro ejes bien diferenciados.
+</p>
+
+<p>
+El primer eje, busca establecer vínculos promoviendo el intercambio de
+saberes tanto desde la facultad hacia las instituciones, como de estas
+hacia la facultad. Conocimientos más técnicos de,por ejemplo, conceptos,
+metodologías, tecnologías y su funcionamiento ayudan a las instituciones
+y sus integrantes a comprender las distintas noticias y novedades donde
+la informática puede encontrarse embebida en ellas. Además, conceptos y
+prácticas de comunicación y socialización promueven a la facultad a
+enriquecer sus interacciones con dicha institución, y con el público de
+estas, fomentando y compartiendo nuestros proyectos y producciones. La
+radiodifusión, los talleres y conversatorios es una forma de llevar a
+cabo este eje, promoviendo la vinculación e interacción a medida que se
+realizan actividades entre integrantes de las instituciones y de la
+facultad.
+</p>
+
+<p>
+El segundo eje, consiste en compartir la palabra de nuestra facultad
+acerca de nuestros proyectos, propuestas y novedades, como así también
+de nuestros conocimientos. Esto, no suele ser agenda habitual de las
+instituciones con marcada influencia social, pero aún así, no deja de
+ser de interés para el público en general. Para ello, la elaboración de
+audiovisuales promueve la comunicación y el debate, permitiendo llevar
+nuestro mensaje por los diferentes medios de difusión y así remitir la
+palabra a una audiencia general.
+</p>
+
+<p>
+El tercer eje, es la producción y promoción de recursos audio-visuales
+como medio creativo y para compartir información y actualidad. Estos
+recursos pueden ser producidos tanto por estudiantes, docentes, no
+docentes y graduados de nuestra facultad como por otras personas de la
+comunidad en colaboración con nuestro proyecto. Por ejemplo, estudiantes
+de escuelas secundarias <sup><a id="fnr.4" class="footref" href="#fn.4" role="doc-backlink">4</a></sup> profesionales y trabajadores de la radio,
+personas interesadas en compartir experiencias de la informática, etc.
+Promueven el debate y la comunicación de información a la sociedad en
+general. También, se de gran utilidad para complementar las actividades
+de los otros ejes.
+</p>
+
+<p>
+Por último, el cuarto eje conlleva la realización de talleres y
+conversatorios por parte de los integrantes del proyecto para
+intercambiar conocimientos y promover tópicos que sean de su interés,
+ampliando la vinculación por medio de una interacción más personal y no
+solo por medio de recursos digitales.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org962ef2e" class="outline-2">
+<h2 id="org962ef2e"><span class="section-number-2">3.</span> Experiencias y resultados</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Actualmente, la Facultad de Informática está desarrollando un programa
+de radio denominado de una hora "Control Z" emitido por la FM 103.7
+Radio UNCo-CALF<sup><a id="fnr.5" class="footref" href="#fn.5" role="doc-backlink">5</a></sup>. Su contenido se produce en un ambiente
+colaborativo recibiendo novedades e información de los distintos
+claustros de nuestra facultad.
+</p>
+
+<p>
+Las personas participantes del proyecto, comparten el objetivo en común
+de producir y realizar cada emisión del programa, aprendiendo el proceso
+que se requiere para ello: la producción del guión y del contenido, la
+elaboración de recursos auditivos, la preparación y realización de
+entrevistas, la interacción con el personal de radio (operadores,
+directores de radio, productores, etc.), conducción del programa, la
+gestión de redes sociales y la consideración de la identidad gráfica,
+etc.
+</p>
+
+<p>
+Es relevante mencionar que estas actividades y la interacción con el
+público general les propone una experiencia innovadora y satisfactoria
+para las personas participantes de la producción y la conducción del
+programa, particularmente estudiantes, incentivando sus aportes, su
+creatividad y su predisposición para estudiar e investigar temáticas de
+informática y de la universidad y para intercambiar su experiencias ante
+la sociedad.
+</p>
+
+<p>
+La integración de las TICs como recurso de investigación y formación
+junto con la dinámica radial favoreció el vinculo con la comunidad
+universitaria y con otras comunidades como centros educativos para
+intercambios de experiencias escolares, y grupos de especialistas
+informáticos de la zona, entre otros.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org89bafe5" class="outline-2">
+<h2 id="org89bafe5"><span class="section-number-2">4.</span> Integrantes del Equipo Control Z</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+El equipo de Control Z está compuesto por integrantes de diferentes
+claustros de la Facultad de Informática de la Universidad Nacional del
+Comahue.
+</p>
+
+<ul class="org-ul">
+<li>Acosta, Ian Franco Matías. Integrante del claustro Estudiante de la
+Facultad de Informática.</li>
+
+<li>Avellaneda, Ángel. Integrante del claustro Estudiante de la Facultad
+de Informática.</li>
+
+<li>Bruno, Leo. Integrante del claustro Estudiante de la Facultad de
+Informática.</li>
+
+<li>Cañibano, Rodrigo. Integrante del claustro Docente de la Facultad de
+Informática.</li>
+
+<li>Galaz, Lara Virginia. Integrante del claustro Estudiante de la
+Facultad de Informática.</li>
+
+<li>Gimenez, Christian Nelson. Integrante del claustro Docente de la
+Facultad de Informática.</li>
+
+<li>Kogan, Pablo. Integrante del claustro Docente de la Facultad de
+Informática.</li>
+
+<li>Mazalu, Rafaela. Integrante del claustro Docente de la Facultad de
+Informática.</li>
+
+<li>Monserrat Vidal, María Elvira. Integrante del claustro Estudiante de
+la Facultad de Informática.</li>
+
+<li>Morán, Marina. Integrante del claustro Docente de la Facultad de
+Informática.</li>
+
+<li>Rodriguez, Jorge Pablo. Integrante del claustro Docente de la Facultad
+de Informática.</li>
+
+<li>Rotter, Valeria. Integrante del claustro No docente de la Facultad de
+Informática.</li>
+
+<li>Villarroel, Valentina. Integrante del claustro Estudiante de la
+Facultad de Informática.</li>
+</ul>
+</div>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Notas al pie de p&aacute;gina: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1" role="doc-backlink">1</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<a href="https://incuba.fi.uncoma.edu.ar/webinar/appinventor/">https://incuba.fi.uncoma.edu.ar/webinar/appinventor/</a>
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.2" class="footnum" href="#fnr.2" role="doc-backlink">2</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<a href="http://incuba.fi.uncoma.edu.ar/franklab">http://incuba.fi.uncoma.edu.ar/franklab</a>
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.3" class="footnum" href="#fnr.3" role="doc-backlink">3</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<a href="https://www.fi.uncoma.edu.ar/index.php/prensa/feria-it-joven-en-tecnopolis/">https://www.fi.uncoma.edu.ar/index.php/prensa/feria-it-joven-en-tecnopolis/</a>
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.4" class="footnum" href="#fnr.4" role="doc-backlink">4</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Ejemplos de spots creados en otros proyectos de la FaI: EESISeg
+de los cuales Control Z puede utilizar y colaborar
+<a href="https://internetseguro.fi.uncoma.edu.ar/categoria-producto/tipo-de-recurso/spot-radio/">https://internetseguro.fi.uncoma.edu.ar/categoria-producto/tipo-de-recurso/spot-radio/</a>),
+visitado el día 30 de octubre del 2023.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.5" class="footnum" href="#fnr.5" role="doc-backlink">5</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<a href="https://universidadcalf.com/">https://universidadcalf.com/</a> visitado el 30 de octubre
+del 2023.
+</p>
+
+</main></div></div>
+
+
+</div>
+</div></div>
+<div id="postamble" class="status">
+<p class="date">Fecha: Noviembre del 2023</p>
+<p class="author">Autor: Equipo Control Z - Facultad de Informática, Universidad Nacional del Comahue</p>
+<p class="date">Created: 2024-03-28 jue 17:01</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
