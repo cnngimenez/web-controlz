@@ -743,6 +743,26 @@
         "entrevistade": "Valentina Natalini",
         "tema": "La noche de las letras y la noche de las universidades.",
         "fecha": "20/11/2024"
+    },
+    {
+        "entrevistade": "Benjamín Muñoz",
+        "tema": "Charla-Taller Bug Bounty.",
+        "fecha": "27/11/2024"
+    },
+    {
+        "entrevistade": "Federico Ceccotti",
+        "tema": "Uso responsable de tecnologías en los secundarios",
+        "fecha": "27/11/2024"
+    },
+    {
+        "entrevistade": "Susana Parra",
+        "tema": "Actividades de Bienestar FaI 2024 y 2025",
+        "fecha": "09/04/2025"
+    },
+    {
+        "entrevistade": "Gabriela Aranda",
+        "tema": "Semana de las ciencias: proyectos de investigación en FaI.",
+        "fecha": "09/04/2025"
     }
 ]
 
