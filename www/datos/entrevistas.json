@@ -801,8 +801,23 @@
     },
     {
         "entrevistade": "Paula Viggiano",
-        "tema": "Programate Itinerante en Zapala",
+        "tema": "Programate Itinerante en Zapala.",
         "fecha": "28/05/2025"
+    },
+    {
+        "entrevistade": "Lara Acuña",
+        "tema": "Hacka Neuquén II (¿cómo les fue?).",
+        "fecha": "25/06/2025"
+    },
+    {
+        "entrevistade": "Yoshara Soria",
+        "tema": "Actividades acerca de Internet Seguro en el CPEM 36 (Zapala).",
+        "fecha": "25/06/2025"
+    },
+    {
+        "entrevistade": "Estudiantes de 3ro del CPEM 36",
+        "tema": "Actividades acerca de Internet Seguro en el CPEM 36 (Zapala).",
+        "fecha": "25/06/2025"
     }
 ]
 
